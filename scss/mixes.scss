@@ -1,0 +1,11 @@
+@mixin hastaMobileTablet{
+    @media(max-width: 860px){
+        @content;
+    }
+}
+
+@mixin hastaDesktop{
+    @media(max-width: 2000px){
+        @content;
+    }
+}

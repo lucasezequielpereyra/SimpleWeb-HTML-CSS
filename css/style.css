@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box; }
+
+:root {
+  font-size: 16px; }
+
+body {
+  background-color: #000000ec;
+  font-family: 'Space Mono', monospace; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BioRhyme', serif; }
+
+.bg-dark {
+  background-color: #ffffff !important; }
+
+.nav-link {
+  color: #5c5c5c !important; }
+
+.active > .nav-link {
+  color: #000000 !important; }
+
+.fa-bars {
+  color: #000000 !important;
+  font-size: 2rem !important; }
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  header .nav-item {
+    text-align: center; }
+  header .nav-link {
+    font-family: 'BioRhyme', serif;
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+    header .nav-link:hover {
+      background-color: #5c5c5c5e;
+      text-shadow: 0 -1px 1px #383838;
+      border-radius: .5rem; }
+
+main .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.89); }
+  main .carousel-caption h2 {
+    font-size: 2rem;
+    text-transform: uppercase; }
+
+main h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0;
+  color: #ffffff8f; }
+
+.seccion-inicio-info {
+  margin-top: 1rem; }
+  @media (max-width: 2000px) {
+    .seccion-inicio-info .articulo-containers-redes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      gap: 2rem;
+      align-content: center; }
+      .seccion-inicio-info .articulo-containers-redes div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        align-items: center;
+        border-radius: 1rem;
+        background-color: #e6e6e6;
+        box-shadow: 1px 3px 10px 8px white; } }
+
+.articulo-containers-redes div h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  width: 100%; }
+
+.articulo-containers-redes div a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center; }
+  .articulo-containers-redes div a .img-escuela {
+    margin: 15%; }
+  .articulo-containers-redes div a img {
+    display: block;
+    width: 90%;
+    margin-bottom: 1rem;
+    border-radius: 1rem; }
+    .articulo-containers-redes div a img:hover {
+      transform: scale(1.1);
+      transition: 300ms; }

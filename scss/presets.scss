@@ -1,0 +1,28 @@
+@import 'colores.scss';
+
+// Variables
+$fontsize: 1rem;
+
+// Style
+*{ box-sizing: border-box; }
+:root{ font-size: 16px; }
+body{ background-color: $bg-body; font-family: 'Space Mono', monospace;}
+h1,h2,h3,h4,h5,h6{ font-family: 'BioRhyme', serif; }
+
+// Bootstrap
+.bg-dark{
+    background-color: $white !important;
+}
+.nav-link{
+    color: $grey !important;
+}
+.active > .nav-link{
+    color: $black !important ;
+}
+
+
+// Font Awesome
+.fa-bars{
+    color: $black !important;
+    font-size: 2rem !important;
+}
