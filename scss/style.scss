@@ -207,6 +207,16 @@ main{
         grid-row: span 1;
         height: 100%;
     }
+
+    @include hastaMobileTablet{
+        article{
+            div{
+                h2{
+                    font-size: $fontsize * 1.3;
+                }
+            }
+        }
+    }
 }
 
 

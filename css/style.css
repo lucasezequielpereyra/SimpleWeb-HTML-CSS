@@ -173,6 +173,9 @@ main h1 {
     grid-column: span 2;
     grid-row: span 1;
     height: 100%; }
+  @media (max-width: 721px) {
+    .section-layout-grid article div h2 {
+      font-size: 1.3rem; } }
 
 footer {
   user-select: none;
