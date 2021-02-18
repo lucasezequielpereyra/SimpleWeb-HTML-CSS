@@ -220,6 +220,70 @@ main{
 }
 
 
+// contacto.html
+.contacto{
+    margin-top: 2rem;
+    padding: 1rem;
+    box-shadow: $bs-cajas;
+    background-color: $bg-color-cajas;
+    border-radius: .5rem;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    textarea:focus, input:focus, input[type]:focus, select:focus{
+        border-color: $white;
+        box-shadow: none;
+        border: solid $black 1px;
+    }
+
+    input, textarea{
+        border-radius: .5rem;
+    }
+
+    .custom-control-label:before{
+        background-color:white;
+    }
+
+        .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+        background-color:black;
+    }
+
+    .fab, .fas{
+        color: $black !important;
+        font-size: 1rem !important;
+    }
+
+    @include hastaDesktop{
+        .container-contacto{
+            width: 100%;
+            grid-row: span 1;
+        }
+    }
+
+    @include hastaDesktop{
+        .container-datos{
+            grid-row: span 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .datos-contacto{
+                display: inline-block;
+                margin-bottom: 1rem;
+                p{
+                    display: inline;
+                    margin-left: .3rem;
+                }
+            }
+        }
+    }
+
+   
+}
+
+
 // footer
 footer{
     user-select: none;
@@ -273,7 +337,7 @@ footer{
                 }
             }
             p{
-                font-size: 1rem;
+                font-size: $fontsize;
             }
         }
         .footer-columna:nth-child(2){

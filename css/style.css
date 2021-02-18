@@ -22,9 +22,28 @@ h1, h2, h3, h4, h5, h6 {
 .active > .nav-link {
   color: #000000 !important; }
 
-.fa-bars {
-  color: #000000 !important;
-  font-size: 2rem !important; }
+.btn-success {
+  background-color: #000000;
+  border: solid #000000 1px; }
+
+.btn-success:hover {
+  background-color: rgba(19, 19, 19, 0.659); }
+
+.btn-success:active {
+  background-color: #cacaca !important;
+  border: solid #ffffff 1px;
+  box-shadow: none !important; }
+
+.btn-success:focus {
+  background-color: #cacaca !important; }
+
+.btn-success:focus {
+  border: none !important;
+  box-shadow: 1px 3px 10px 8px white !important; }
+
+.btn-secondary:focus {
+  border: none !important;
+  box-shadow: 1px 3px 10px 8px white !important; }
 
 header {
   background-color: #ffffff;
@@ -176,6 +195,52 @@ main h1 {
   @media (max-width: 721px) {
     .section-layout-grid article div h2 {
       font-size: 1.3rem; } }
+
+.contacto {
+  margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: 1px 3px 10px 8px white;
+  background-color: #e6e6e6;
+  border-radius: .5rem;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  .contacto textarea:focus, .contacto input:focus, .contacto input[type]:focus, .contacto select:focus {
+    border-color: #ffffff;
+    box-shadow: none;
+    border: solid #000000 1px; }
+  .contacto input, .contacto textarea {
+    border-radius: .5rem; }
+  .contacto .custom-control-label:before {
+    background-color: white; }
+  .contacto .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: black; }
+  .contacto .fab, .contacto .fas {
+    color: #000000 !important;
+    font-size: 1rem !important; }
+  @media (min-width: 721px) {
+    .contacto .container-contacto {
+      width: 100%;
+      grid-row: span 1; } }
+  @media (min-width: 721px) {
+    .contacto .container-datos {
+      grid-row: span 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contacto .container-datos .datos-contacto {
+        display: inline-block;
+        margin-bottom: 1rem; }
+        .contacto .container-datos .datos-contacto p {
+          display: inline;
+          margin-left: .3rem; } }
+  @media (max-width: 721px) {
+    .contacto .container-contacto {
+      width: 100%;
+      grid-row: span 1; } }
 
 footer {
   user-select: none;

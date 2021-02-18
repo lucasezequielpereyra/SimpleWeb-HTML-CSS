@@ -23,9 +23,31 @@ h1,h2,h3,h4,h5,h6{ font-family: 'BioRhyme', serif; }
     color: $black !important ;
 }
 
+.btn-success{
+    background-color: $black;
+    border: solid $black 1px;
+}
 
-// Font Awesome
-.fa-bars{
-    color: $black !important;
-    font-size: 2rem !important;
+.btn-success:hover{
+    background-color: $black-2;
+}
+
+.btn-success:active{
+    background-color: $grey!important;
+    border: solid $white 1px;
+    box-shadow: none !important;
+}
+
+.btn-success:focus{
+    background-color: $grey!important;
+}
+
+.btn-success:focus{
+    border: none !important;
+    box-shadow: $bs-cajas !important;
+}
+
+.btn-secondary:focus{
+    border: none !important;
+    box-shadow: $bs-cajas !important;
 }
