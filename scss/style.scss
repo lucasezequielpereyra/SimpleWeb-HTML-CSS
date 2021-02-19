@@ -150,6 +150,9 @@ main{
 // servicios.html
 .section-layout-grid{
     display: grid;
+    background-color: $bg-color-cajas;
+    box-shadow: $bs-cajas;
+    margin: auto;
     @include hastaDesktop{
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
@@ -257,17 +260,6 @@ main{
 
 // contacto.html
 .contacto{
-    margin-top: 2rem;
-    padding: 1rem;
-    box-shadow: $bs-cajas;
-    background-color: $bg-color-cajas;
-    border-radius: .5rem;
-    display: grid;
-    grid-auto-columns: auto;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     textarea:focus, input:focus, input[type]:focus, select:focus{
         border-color: $white;
         box-shadow: none;
@@ -287,35 +279,45 @@ main{
     }
 
     .fab, .fas{
-        color: $black !important;
-        font-size: 1rem !important;
+        color: $black;
+        font-size: 1rem ;
     }
 
-    @include hastaDesktop{
-        .container-contacto{
-            width: 100%;
-            grid-row: span 1;
+    background-color: $bg-color-cajas;
+    box-shadow: $bs-cajas;
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: auto;
+
+    .container-contacto{
+        form{
+            max-width: 100%;
         }
     }
 
-    @include hastaDesktop{
-        .container-datos{
-            grid-row: span 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .datos-contacto{
+    .container-datos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            p{
                 display: inline-block;
-                margin-bottom: 1rem;
+                margin-left: .5rem;
+            }
+            &:first-child{
                 p{
-                    display: inline;
-                    margin-left: .3rem;
+                    margin-right: 1rem;
                 }
+            }
+
+            iframe{
+                max-width: 100%;
             }
         }
     }
 }
-
 
 // footer
 footer{
