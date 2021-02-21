@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/reset.css">
     <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&family=Space+Mono&display=swap"
+        rel="stylesheet">
     <!--FontAwesome-->
     <link rel="stylesheet" href="css/all.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <!--SEO-->
-    <meta name="description" content="Bienvenidos a PaintGarage, amantes de la estetica vehicular. Somos número 1 en argentina"/>
-    <meta name="keywords" content="auto, autos, detailing, deteail, car detailing, detailers, estetica vehicular, tratamiento acrilico, tratamiento ceramico, abrillantado"/>
+    <meta name="description"
+        content="Bienvenidos a PaintGarage, amantes de la estetica vehicular. Somos número 1 en argentina" />
+    <meta name="keywords"
+        content="auto, autos, detailing, deteail, car detailing, detailers, estetica vehicular, tratamiento acrilico, tratamiento ceramico, abrillantado" />
     <title>🚗PaintGarage - Galeria</title>
 </head>
 
@@ -40,7 +44,7 @@
                         <a class="nav-link" href="./servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Galeria<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Reseñas</a>
@@ -54,15 +58,15 @@
     </header>
     <main>
         <div class="container-galeria">
-            <div class="galeria__banner">
+            <div class="galeria__banner container-fluyd">
                 <img src="assets/galeria-banner.jpg" alt="Banner de la sección">
             </div>
-            
+
             <div class="galeria__detallado">
                 <div class="galeria__encabezado">
-                    <h3>car detailing</h3>
+                    <h3 id="Detailing">trabajos de detailing</h3>
                 </div>
-                <div class="galeria__grid container-lg">
+                <div class="galeria__grid container-xl">
                     <div class="galeria__item">
                         <img src="assets/galeria-detalaldo/imagen1.jpg" alt="" class="galeria__img">
                     </div>
@@ -90,15 +94,35 @@
                 </div>
             </div>
 
-            <div class="galeria__pintura">
+            <div class="galeria__pintura" id="Pintura">
                 <div class="galeria__encabezado">
                     <h3>trabajos de pintura</h3>
                 </div>
-            </div>
-
-            <div class="galeria__chapa">
-                <div class="galeria__encabezado">
-                    <h3>trabajos de chapa</h3>
+                <div class="galeria__grid container-xl">
+                    <div class="galeria__item">
+                        <img src="assets/galeria-pintura/imagen1.jpg" alt="" class="galeria__img">
+                    </div>
+                    <div class="galeria__item">
+                        <img src="assets/galeria-pintura/imagen2.jpg" alt="" class="galeria__img">
+                    </div>
+                    <div class="galeria__item">
+                        <img src="assets/galeria-pintura/imagen3.jpg" alt="" class="galeria__img">
+                    </div>
+                    <div class="galeria__item">
+                        <img src="assets/galeria-pintura/imagen4.jpg" alt="" class="galeria__img">
+                    </div>
+                    <div class="galeria__item">
+                        <img src="assets/galeria-pintura/imagen5.jpg" alt="" class="galeria__img">
+                    </div>
+                    <div class="galeria__item">
+                        <img src="assets/galeria-pintura/imagen6.jpg" alt="" class="galeria__img">
+                    </div>
+                    <div class="galeria__item">
+                        <img src="assets/galeria-pintura/imagen7.jpg" alt="" class="galeria__img">
+                    </div>
+                    <div class="galeria__item">
+                        <img src="assets/galeria-pintura/imagen8.jpg" alt="" class="galeria__img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,13 +137,20 @@
                 </div>
                 <div class="footer-columna">
                     <h3>Dirección</h3>
-                    <span class="fa fa-map-marker"><p>Buenos Aires, Argentina</p></span>
-                    <span class="fa fa-phone"><p>(+54) 011 1122 3344</p></span>
-                    <span class="fa fa-envelope"><p>info@paintgarage.com</p></span>
+                    <span class="fa fa-map-marker">
+                        <p>Buenos Aires, Argentina</p>
+                    </span>
+                    <span class="fa fa-phone">
+                        <p>(+54) 011 1122 3344</p>
+                    </span>
+                    <span class="fa fa-envelope">
+                        <p>info@paintgarage.com</p>
+                    </span>
                 </div>
                 <div class="footer-columna">
                     <h3>Sobre Nosotros</h3>
-                    <p>Somos una empresa que se dedica 100% a la estetica vehicular. Reconocida por la excelencia en todos los labores que realizamos y el cuidado que le damos a su vehiculo.</p>
+                    <p>Somos una empresa que se dedica 100% a la estetica vehicular. Reconocida por la excelencia en
+                        todos los labores que realizamos y el cuidado que le damos a su vehiculo.</p>
                 </div>
             </div>
         </div>
@@ -130,16 +161,22 @@
                     &copy; 2021, TODOS LOS DERECHOS RESERVADOS - PAINTGARAGE
                 </div>
                 <div class="footer-redes">
-                    <a href="#" class="fab fa-facebook"></a>
-                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="https://www.facebook.com/paintgarageok" class="fab fa-facebook"></a>
+                    <a href="https://www.instagram.com/paintgarageok" class="fab fa-instagram"></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
 </body>
 
