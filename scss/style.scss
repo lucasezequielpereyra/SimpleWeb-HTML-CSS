@@ -3,7 +3,7 @@
 @import 'presets.scss'; // Establece presets propios y de bootstrap
 
 header{
-    background-color: $white;
+    background-color: $black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,21 +13,21 @@ header{
         font-size: $fontsize * 1.5;
         text-transform: uppercase;
         &:hover{
-            background-color: $grey-2;
+            border-bottom: $white solid 1px;
             text-shadow: 0 -1px 1px $black;
             border-radius: .5rem;
         }
+    }
+
+    .fa{
+        font-size: 2rem;
+        color: $white;
     }
 
 }
 
 // index.html
 main{
-    .fas{
-        font-size: 2rem;
-        color: $white;
-    }
-
     .carousel-caption{
         background-color: rgba(0, 0, 0, 0.822);
         @include hastaDesktop{
@@ -50,7 +50,7 @@ main{
         text-transform: uppercase;
         text-align: center;
         margin: 2rem 0;
-        color: $white-2;
+        color: $black-2;
     }
 }
 
@@ -120,6 +120,7 @@ main{
             padding-left: .5rem;
             padding-right: .5rem;
             width: 100%;
+            color: $white;
         }
 
         a{
@@ -468,8 +469,8 @@ footer{
     }
     .footer-copy-redes{
         width: 100%;
-        background-color: $white;
-        border-top: 3px solid $black;
+        background-color: $black;
+        border-top: 3px solid $white;
         .main-copy-redes{
             width: 98%;
             max-width: 1000px;
@@ -481,7 +482,7 @@ footer{
             align-items: center;
             .footer-copy{
                 width: 70%;
-                color: $black;
+                color: $white;
             }
             .footer-redes{
                 width: 30%;
@@ -494,7 +495,7 @@ footer{
                     height: 40px;
                     line-height: 40px;
                     border-radius: 50%;
-                    background-color: $grey;
+                    background-color: $white;
                     color: black;
                     text-align: center;
                 }

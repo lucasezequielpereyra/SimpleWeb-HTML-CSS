@@ -11,16 +11,18 @@ h1,h2,h3,h4,h5,h6{ font-family: 'BioRhyme', serif; }
 
 // Bootstrap
 .bg-dark{
-    background-color: $white !important;
+    background-color: $black !important;
 }
 .nav-link{
-    color: $grey !important;
+    color: $white !important;
     &:hover{
-        color: $black-2 !important;
+        color: $white-2!important;
     }
 }
 .active > .nav-link{
-    color: $black !important ;
+    color: $grey !important ;
+    border-bottom: $white solid 1px;
+
 }
 
 .btn-success{
