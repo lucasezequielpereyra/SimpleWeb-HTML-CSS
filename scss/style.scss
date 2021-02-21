@@ -219,6 +219,112 @@ main{
         }
     }
 }
+
+// galeria.html
+.container-galeria{
+    div{
+        position: relative;
+    }
+    .galeria__banner{
+        img{
+            width: 100%;
+            filter: grayscale(0.5);
+        }
+    }
+    
+    .galeria__encabezado{
+        background-color: $bg-color-cajas;
+        width:100%;
+        height: 4rem;
+        margin-bottom: .5rem;
+        h3{
+            color: $black;
+            padding-top: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    .galeria__detallado, .galeria__pintura{
+        width: 100%;
+        margin-bottom: .5rem;
+        .galeria__grid{
+            background-color: $bg-color-cajas;
+            box-shadow: $bs-cajas;
+            display: grid;
+                @include hastaMobileTablet{
+                    grid-template-columns: repeat(auto-fill(2, 1fr));
+                    grid-auto-rows: 150px;
+                    .galeria__item:nth-child(2){
+                        grid-column-start: span 2;
+                    }
+            
+                    .galeria__item:nth-child(7){
+                        grid-column-start: span 2;
+                    }
+
+                    .galeria__item:nth-child(1){
+                        grid-column-start: span 2;
+                    }
+
+                    .galeria__item:nth-child(8){
+                        grid-column-start: span 2;
+                    }
+                }
+
+                @include hastaDesktop{
+                    grid-template-columns: repeat(5, 1fr);
+                    grid-auto-rows: 350px;
+                    .galeria__item:nth-child(1){
+                        grid-column-start: span 2;
+                    }
+                    .galeria__item:nth-child(2){
+                        grid-column-start: span 3;
+                    }
+
+                    .galeria__item:nth-child(3){
+                        grid-column-start: span 3;
+                    }
+
+                    .galeria__item:nth-child(4){
+                        grid-column-start: span 2;
+                    }
+
+                    .galeria__item:nth-child(5){
+                        grid-column-start: span 2;
+                    }
+
+                    .galeria__item:nth-child(6){
+                        grid-column-start: span 3;
+                    }
+
+                    .galeria__item:nth-child(8){
+                        grid-column-start: span 2;
+                    }
+
+                    .galeria__item:nth-child(7){
+                        grid-column-start: span 3;
+                    }
+
+                }
+
+            padding: 20px;
+            grid-gap: .5rem;
+
+            img:hover{
+                filter: opacity(0.9);
+                transform: scale(1.04);
+                transition: transform 0.3s ease-in-out;
+            }
+    
+            .galeria__img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
 // contacto.html
 .container-banner{
     img{
@@ -304,109 +410,6 @@ main{
     }
 }
 
-// galeria.html
-.container-galeria{
-    div{
-        position: relative;
-    }
-    .galeria__banner{
-        img{
-            width: 100%;
-            filter: grayscale(0.5);
-        }
-    }
-    
-    .galeria__encabezado{
-        background-color: $bg-color-cajas;
-        width:100%;
-        height: 4rem;
-        margin-bottom: .2rem;
-        h3{
-            color: $black;
-            padding-top: 1rem;
-            text-transform: uppercase;
-            text-align: center;
-        }
-    }
-    .galeria__detallado, .galeria__pintura{
-        width: 100%;
-        margin-bottom: .7rem;
-        .galeria__grid{
-            background-color: $bg-color-cajas;
-            box-shadow: $bs-cajas;
-            display: grid;
-                @include hastaMobileTablet{
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-auto-rows: 150px;
-                    .galeria__item:nth-child(2){
-                        grid-column-start: span 2;
-                    }
-            
-                    .galeria__item:nth-child(7){
-                        grid-column-start: span 2;
-                        grid-row-start: span 2;
-                    }
-                }
-                
-                @include hastaTablet{
-                    grid-template-columns: repeat(auto-fill(4, 1fr));
-                    grid-auto-rows: 250px;
-                }
-
-                @include hastaDesktop{
-                    grid-template-columns: repeat(5, 1fr);
-                    grid-auto-rows: 350px;
-                    .galeria__item:nth-child(1){
-                        grid-column-start: span 2;
-                    }
-                    .galeria__item:nth-child(2){
-                        grid-column-start: span 3;
-                    }
-
-                    .galeria__item:nth-child(3){
-                        grid-column-start: span 3;
-                    }
-
-                    .galeria__item:nth-child(4){
-                        grid-column-start: span 2;
-                    }
-
-                    .galeria__item:nth-child(5){
-                        grid-column-start: span 2;
-                    }
-
-                    .galeria__item:nth-child(6){
-                        grid-column-start: span 3;
-                    }
-
-                    .galeria__item:nth-child(8){
-                        grid-column-start: span 2;
-                    }
-
-                    .galeria__item:nth-child(7){
-                        grid-column-start: span 3;
-                    }
-
-                }
-
-            padding: 20px;
-            grid-gap: .5rem;
-
-            img:hover{
-                filter: opacity(0.9);
-                transform: scale(1.04);
-                transition: transform 0.3s ease-in-out;
-            }
-    
-            .galeria__img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
-}
-
 // footer
 footer{
     user-select: none;
@@ -432,7 +435,7 @@ footer{
             h3{
                 font-size: $fontsize*1.8;
                 margin-bottom: 1.8rem;
-                color: $black;
+                color: $white;
             }
             input[type="email"]{
                 border: 1px solid $black;
@@ -461,6 +464,7 @@ footer{
             }
             p{
                 font-size: $fontsize;
+                color: $white-2;
             }
         }
         .footer-columna:nth-child(2){
