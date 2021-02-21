@@ -6,12 +6,8 @@ header{
     background-color: $white;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
 
-    .nav-item{
-        text-align: center;
-    }
     .nav-link{
         font-family: 'BioRhyme', serif;
         font-size: $fontsize * 1.5;
@@ -22,6 +18,7 @@ header{
             border-radius: .5rem;
         }
     }
+
 }
 
 // index.html
@@ -176,6 +173,9 @@ main{
             height: auto;
         }
 
+        .data{
+            position: absolute;
+            bottom: 0;
         }
 
         h2{
@@ -253,8 +253,6 @@ main{
         }
     }
 }
-
-
 // contacto.html
 .contacto{
     textarea:focus, input:focus, input[type]:focus, select:focus{
@@ -295,6 +293,7 @@ main{
     }
 
     .container-datos{
+        background-color: $grey;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -311,6 +310,22 @@ main{
 
             iframe{
                 max-width: 100%;
+            }
+
+            .mapa{
+                margin-bottom: 0 ;
+            }
+        }
+    }
+
+    @include hastaMobileTablet{
+        .container-contacto{
+            button{
+                margin: auto;
+            }
+
+            .btn-success{
+                margin-bottom: 1rem;
             }
         }
     }
@@ -409,8 +424,10 @@ footer{
                     text-align: center;
                 }
 
-                .fa-facebook{
-                    margin: 0 1rem;
+                @include hastaDesktop{
+                    .fa-facebook{
+                        margin: 0 1rem;
+                    }
                 }
             }
         }
@@ -435,11 +452,12 @@ footer{
             .footer-copy{
                 width: 100%;
                 text-align: center;
-                margin-bottom: 20px;
             }
             .footer-redes{
-                width: 50%;
-                margin: auto;
+                width: 100%;
+                .fa-facebook{
+                    margin: 0 .5rem;
+                }
             }
         }
     }
