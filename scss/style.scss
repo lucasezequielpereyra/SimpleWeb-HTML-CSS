@@ -2,6 +2,7 @@
 @import 'mixes.scss'; 
 @import 'presets.scss'; // Establece presets propios y de bootstrap
 
+
 header{
     background-color: $black;
     display: flex;
@@ -150,7 +151,8 @@ main{
     display: grid;
     background-color: $bg-color-cajas;
     box-shadow: $bs-cajas;
-    margin: auto;
+    width: 95%;
+    border-radius: .5rem;
     @include hastaDesktop{
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
@@ -160,7 +162,7 @@ main{
         grid-auto-rows: auto;
     }
     
-    gap: 1rem;
+    gap: .5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 
@@ -175,13 +177,8 @@ main{
             height: auto;   
         }
 
-        img:hover{
+        &:hover{
             filter: opacity(0.9);
-            transform: scale(1.02);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        &:hover h2{
             transform: scale(1.02);
             transition: transform 0.3s ease-in-out;
         }
@@ -218,22 +215,29 @@ main{
             }
         }
     }
+
+    .articulo-uno{
+        margin-top: .5rem;
+    }
+
+    .articulo-seis, .articulo-cinco{
+        margin-bottom: .5rem;
+    }
 }
 
 // galeria.html
 .container-galeria{
-    div{
-        position: relative;
-    }
     .galeria__banner{
         img{
             width: 100%;
             filter: grayscale(0.5);
         }
     }
+
+    margin-bottom: -1.5rem;
     
     .galeria__encabezado{
-        background-color: $bg-color-cajas;
+        background: linear-gradient(rgba(124, 124, 124, 0.678), rgba(0, 0 ,0 ,0));
         width:100%;
         height: 4rem;
         margin-bottom: .5rem;
@@ -242,12 +246,19 @@ main{
             padding-top: 1rem;
             text-transform: uppercase;
             text-align: center;
+            font-size: $fontsize * 2;
+            @include hastaMobileTablet{
+                font-size: $fontsize * 1.5;
+            }
         }
     }
     .galeria__detallado, .galeria__pintura{
         width: 100%;
         margin-bottom: .5rem;
+        
         .galeria__grid{
+            width: 95%;
+            border-radius: .5rem;
             background-color: $bg-color-cajas;
             box-shadow: $bs-cajas;
             display: grid;
@@ -320,8 +331,16 @@ main{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: .5rem;
             }
         }
+    }
+}
+
+// resenias.html
+.banner-resenias{
+    img{
+        width: 100%;
     }
 }
 
@@ -334,6 +353,8 @@ main{
     margin-bottom: -.5rem;
 }
 .contacto{
+    width: 95%;
+    margin-bottom: -1.5rem;
     textarea:focus, input:focus, input[type]:focus, select:focus{
         border-color: $white;
         box-shadow: none;
@@ -357,6 +378,10 @@ main{
         font-size: 1rem ;
     }
 
+    label{
+        font-weight: 900;
+    }
+
     background-color: $bg-color-cajas;
     box-shadow: $bs-cajas;
     margin-top: 1rem;
@@ -364,6 +389,7 @@ main{
     gap: 1rem;
     grid-template-rows: 1fr 1fr;
     grid-auto-columns: auto;
+    border-radius: .5rem;
 
     .container-contacto{
         form{
@@ -376,6 +402,8 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: .5rem;
+        border-radius: .5rem;
         div{
             p{
                 display: inline-block;
@@ -386,25 +414,21 @@ main{
                     margin-right: 1rem;
                 }
             }
-
+            
             iframe{
-                max-width: 100%;
+                max-width: 95%;
+                border-radius: .5rem;
+                margin-left: .7rem;
             }
 
-            .mapa{
-                margin-bottom: 0 ;
-            }
+            
         }
     }
 
     @include hastaMobileTablet{
         .container-contacto{
             button{
-                margin: auto;
-            }
-
-            .btn-success{
-                margin-bottom: 1rem;
+                margin: .2rem;
             }
         }
     }
