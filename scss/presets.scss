@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6{ font-family: 'BioRhyme', serif; }
 .active > .nav-link{
     color: $grey !important ;
     border-bottom: $white solid 1px;
+    border-top: $white solid 1px;
     border-radius: .5rem;
 }
 

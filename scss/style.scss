@@ -24,7 +24,23 @@ header{
         font-size: 2rem;
         color: $white;
     }
+}
 
+.encabezado-contenido{
+    background: linear-gradient(rgba(124, 124, 124, 0.678), rgba(0, 0 ,0 ,0));
+    width:100%;
+    height: 4rem;
+    margin-bottom: .5rem;
+    h3{
+        padding-top: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $fontsize * 2;
+        @include hastaMobileTablet{
+            font-size: $fontsize * 1.5;
+            color: $black;
+        }
+    }
 }
 
 // index.html
@@ -237,10 +253,6 @@ main{
     margin-bottom: -1.5rem;
     
     .galeria__encabezado{
-        background: linear-gradient(rgba(124, 124, 124, 0.678), rgba(0, 0 ,0 ,0));
-        width:100%;
-        height: 4rem;
-        margin-bottom: .5rem;
         h3{
             color: $black;
             padding-top: 1rem;
@@ -341,6 +353,27 @@ main{
 .banner-resenias{
     img{
         width: 100%;
+        filter: grayscale(0.5);
+    }
+}
+
+.container-resenias{
+    background-color: $bg-color-cajas;
+    box-shadow: $bs-cajas;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 500px;
+    gap: 1rem;
+
+
+    .resenias__grid{
+        background-color: $white;
+        border-radius: .5rem;
+        img{
+            width: 100%;
+            margin: auto;
+        }
     }
 }
 
@@ -384,7 +417,6 @@ main{
 
     background-color: $bg-color-cajas;
     box-shadow: $bs-cajas;
-    margin-top: 1rem;
     display: grid;
     gap: 1rem;
     grid-template-rows: 1fr 1fr;
