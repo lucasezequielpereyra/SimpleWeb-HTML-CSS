@@ -1,7 +1,7 @@
 # PaintGarage
 _Paint Garage - CoderHouse Page_
 
-* [Preview](https://github.com/lucasezequielpereyra/proyecto-final-coder)
+* [Preview](https://lucasezequielpereyra.github.io/proyecto-final-coder/)
 
 
 ## Construido con 🛠️
